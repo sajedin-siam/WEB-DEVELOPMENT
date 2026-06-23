@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Form</title>
+    <link rel="stylesheet" href="basichtmlForm.css">
+</head>
+<body>
+
+    <h1>Basic HTML Form</h1>
+
+    <form action="#" method="POST">
+        <fieldset class="form-section">
+            <legend>Name</legend>
+            
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="firstname">
+            </div>
+            
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="lastname">
+            </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+            <legend>Other Questions</legend>
+            
+            <div class="question-group">
+                <label class="question-title">Choose a drink:</label>
+                <div class="option">
+                    <input type="radio" id="coffee" name="drink" value="coffee">
+                    <label for="coffee">coffee</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="tea" name="drink" value="tea" checked>
+                    <label for="tea">tea</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="hot-chocolate" name="drink" value="hot-chocolate">
+                    <label for="hot-chocolate">hot chocolate</label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <label class="question-title">What ice cream do you like?</label>
+                <div class="option">
+                    <input type="checkbox" id="chocolate" name="ice-cream" value="chocolate">
+                    <label for="chocolate">Chocolate</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="pudding" name="ice-cream" value="pudding">
+                    <label for="pudding">Chocolate Pudding</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="peanut-butter" name="ice-cream" value="peanut-butter" checked>
+                    <label for="peanut-butter">Chocolate Peanut Butter</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="vanilla" name="ice-cream" value="vanilla">
+                    <label for="vanilla">Vanilla</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="strawberry" name="ice-cream" value="strawberry">
+                    <label for="strawberry">Strawberry</label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <label for="school" class="question-title">Select a school:</label>
+                <select id="school" name="school">
+                    <option value="harvard" selected>Harvard</option>
+                    <option value="mit">MIT</option>
+                    <option value="stanford">Stanford</option>
+                </select>
+            </div>
+
+            <div class="question-group">
+                <label for="comments" class="question-title">Please provide comments:</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+</body>
+</html>
