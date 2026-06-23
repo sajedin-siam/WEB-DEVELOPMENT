@@ -14,4 +14,4 @@ A simple student records table created using HTML and CSS.
 - `image.png` - Preview of the output
 
 ## Preview
-![Table Preview](image.png)
+![Table Preview](image/image.png)
