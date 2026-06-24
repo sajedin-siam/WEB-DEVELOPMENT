@@ -33,13 +33,41 @@
                 placeholder="***@gmail.com"
                 required>   
              </div>
-            <!-- email -->
+            <!-- number -->
              <div class="form-group">
                 <label for="Phone">Email Address</label>
                 <input type="tel"
                 id="Phone"
                 name="Phone"
                 placeholder="01******" pattern="[0-9]{11}"
+                required>   
+             </div>
+            <!-- Date of Birth -->
+             <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date"
+                id="dob"
+                name="dob"
+                required>   
+             </div>
+            <!-- Password-->
+             <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                placeholder="Minium 8 character"
+                required>   
+             </div>
+            <!-- confirm Password-->
+             <div class="form-group">
+                <label for="Confirm Password">Confirm Password</label>
+                <input type="password"
+                id="Confirm Password"
+                name="Confirm Password"
+                minlength="8"
+                placeholder="Minium 8 character"
                 required>   
              </div>
         </fieldset>
