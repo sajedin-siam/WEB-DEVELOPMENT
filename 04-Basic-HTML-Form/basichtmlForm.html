@@ -8,21 +8,40 @@
 </head>
 <body>
 
-    <h1>Basic HTML Form</h1>
+    <h1>Student Regintration Form</h1>
 
     <form action="#" method="POST">
+        <!-- personal information -->
         <fieldset class="form-section">
-            <legend>Name</legend>
+            <legend>Personal Information</legend>
             
             <div class="form-group">
                 <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="firstname">
+                <input type="text" id="first-name" name="firstname" placeholder="Enter first name" required>
             </div>
             
             <div class="form-group">
                 <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="lastname">
+                <input type="text" id="last-name" name="lastname" placeholder="Enter last name" required>
             </div>
+            <!-- email -->
+             <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email"
+                id="email"
+                name="email"
+                placeholder="***@gmail.com"
+                required>   
+             </div>
+            <!-- email -->
+             <div class="form-group">
+                <label for="Phone">Email Address</label>
+                <input type="tel"
+                id="Phone"
+                name="Phone"
+                placeholder="01******" pattern="[0-9]{11}"
+                required>   
+             </div>
         </fieldset>
 
         <fieldset class="form-section">
