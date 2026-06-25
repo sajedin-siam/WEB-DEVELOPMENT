@@ -25,26 +25,28 @@ form{
 }
 
 .form-section {
-    border: 1px solid #767676;
-    padding: 15px 20px 20px 20px;
-    margin-bottom: 12px;
+    border: 2px solid #4a90e2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 legend {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    padding: 0 5px;
+    color: #4a90e2;
+    font-weight: bold;
+    padding: 0 10px;
 }
 
 .form-group {
-    margin-top: 12px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .form-group label {
-    font-size: 15px;
-    margin-bottom: 4px;
+font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
 }
 
 .form-group input[type="text"] {
