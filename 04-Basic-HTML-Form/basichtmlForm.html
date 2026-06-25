@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML Form</title>
     <link rel="stylesheet" href="basichtmlForm.css">
 </head>
+
 <body>
 
     <h1>Student Regintration Form</h1>
@@ -14,81 +16,77 @@
         <!-- personal information -->
         <fieldset class="form-section">
             <legend>Personal Information</legend>
-            
+
             <div class="form-group">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="firstname" placeholder="Enter first name" required>
             </div>
-            
+
             <div class="form-group">
                 <label for="last-name">Last Name</label>
                 <input type="text" id="last-name" name="lastname" placeholder="Enter last name" required>
             </div>
             <!-- email -->
-             <div class="form-group">
+            <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email"
-                id="email"
-                name="email"
-                placeholder="***@gmail.com"
-                required>   
-             </div>
+                <input type="email" id="email" name="email" placeholder="***@gmail.com" required>
+            </div>
             <!-- number -->
-             <div class="form-group">
+            <div class="form-group">
                 <label for="Phone">Email Address</label>
-                <input type="tel"
-                id="Phone"
-                name="Phone"
-                placeholder="01******" pattern="[0-9]{11}"
-                required>   
-             </div>
+                <input type="tel" id="Phone" name="Phone" placeholder="01******" pattern="[0-9]{11}" required>
+            </div>
             <!-- Date of Birth -->
-             <div class="form-group">
+            <div class="form-group">
                 <label for="dob">Date of Birth</label>
-                <input type="date"
-                id="dob"
-                name="dob"
-                required>   
-             </div>
+                <input type="date" id="dob" name="dob" required>
+            </div>
             <!-- Password-->
-             <div class="form-group">
+            <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password"
-                id="password"
-                name="password"
-                minlength="8"
-                placeholder="Minium 8 character"
-                required>   
-             </div>
+                <input type="password" id="password" name="password" minlength="8" placeholder="Minium 8 character"
+                    required>
+            </div>
             <!-- confirm Password-->
-             <div class="form-group">
+            <div class="form-group">
                 <label for="Confirm Password">Confirm Password</label>
-                <input type="password"
-                id="Confirm Password"
-                name="Confirm Password"
-                minlength="8"
-                placeholder="Minium 8 character"
-                required>   
-             </div>
+                <input type="password" id="Confirm Password" name="Confirm Password" minlength="8"
+                    placeholder="Minium 8 character" required>
+            </div>
         </fieldset>
+        <!-- Gender section -->
+        <fieldset class="form-section">
+            <legend>Gender</legend>
+            <div class="option">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+            </div>
+            <div class="option">
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">female</label>
+
+            </div>
+
+        </fieldset>
+        <!-- Favorite drink -->
 
         <fieldset class="form-section">
-            <legend>Other Questions</legend>
-            
-            <div class="question-group">
-                <label class="question-title">Choose a drink:</label>
-                <div class="option">
-                    <input type="radio" id="coffee" name="drink" value="coffee">
-                    <label for="coffee">coffee</label>
-                </div>
-                <div class="option">
-                    <input type="radio" id="tea" name="drink" value="tea" checked>
-                    <label for="tea">tea</label>
-                </div>
-                <div class="option">
-                    <input type="radio" id="hot-chocolate" name="drink" value="hot-chocolate">
-                    <label for="hot-chocolate">hot chocolate</label>
-                </div>
+            <legend>Fevorite Drink</legend>
+
+            <div class="option">
+                <input type="radio" id="coffee" name="drink" value="coffee">
+                <label class="coffee">Coffee</label>
+
+            </div>
+            <div class="option">
+                <input type="radio" id="tea" name="drink" value="tea" checked>
+                <label for="tea">Tea</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="Juice" name="drink" value="Juice">
+                <label for="Juice">Juice</label>
+            </div>
             </div>
 
             <div class="question-group">
@@ -134,4 +132,5 @@
     </form>
 
 </body>
+
 </html>
