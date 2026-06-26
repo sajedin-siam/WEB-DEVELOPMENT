@@ -5,6 +5,8 @@ A clean and interactive user registration form featuring advanced input types an
 ## Preview
 ![Registration Form Screenshot 1](./image.png)
 ![Registration Form Screenshot 2](./2nd.png)
+![Registration Form Screenshot 3](./3rd.png)
+
 ## What I Learned
 - Utilizing fieldsets and legends for form grouping
 - Implementing form validation concepts (placeholder, required fields)
