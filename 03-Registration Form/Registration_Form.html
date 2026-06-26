@@ -1,196 +1,155 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>
-    <!-- css file -->
-    <link rel="stylesheet" href="Registration Form.css" />
-  </head>
-  <body>
-    <div class="form-container">
-      <h2>Registration form</h2>
 
-      <form action="#" method="POST">
-        <fieldset>
-          <legend>User personal information</legend>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <!-- css file -->
+  <link rel="stylesheet" href="Registration Form.css" />
+</head>
 
-          <div class="form-group">
-            <label for="fullname">Enter your full name</label>
-            <input type="text" id="fullname" name="fullname" required />
-          </div>
+<body>
+  <div class="form-container">
+    <h2>Registration form</h2>
 
-          <div class="form-group">
-            <label for="email">Enter your email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="username"> Enter Username</label>
-            <input type="text" id="username" name="username" required />
-          </div>
-          <div class="form-group">
-            <label for="phone"> Phone Number</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="01XXXXXXXXX"
-              pattern="[0-9]{11}"
-              required />
-          </div>
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <fieldset>
+        <legend>User personal information</legend>
 
-          <div class="form-group">
-            <label for="password">Enter your password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              minlength="8"
-              required />
-          </div>
+        <div class="form-group">
+          <label for="fullname">Enter your full name</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
 
-          <div class="form-group">
-            <label for="confirm-password">confirm your password</label>
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-              required />
+        <div class="form-group">
+          <label for="email">Enter your email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="username"> Enter Username</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="phone"> Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" pattern="[0-9]{11}" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Enter your password</label>
+          <input type="password" id="password" name="password" minlength="8" required />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">confirm your password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required />
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+        <!-- gender section -->
+        <div class="form-group gender-group">
+          <label>Enter your gender</label>
+          <div class="radio-option">
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
           </div>
-          <div class="form-group">
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required />
+          <div class="radio-option">
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
           </div>
-          <!-- gender section -->
-          <div class="form-group gender-group">
-            <label>Enter your gender</label>
-            <div class="radio-option">
-              <input
-                type="radio"
-                id="male"
-                name="gender"
-                value="male"
-                required />
-              <label for="male">Male</label>
-            </div>
-            <div class="radio-option">
-              <input type="radio" id="female" name="gender" value="female" />
-              <label for="female">Female</label>
-            </div>
-            <div class="radio-option">
-              <input type="radio" id="others" name="gender" value="others" />
-              <label for="others">others</label>
-            </div>
+          <div class="radio-option">
+            <input type="radio" id="others" name="gender" value="others" />
+            <label for="others">others</label>
           </div>
-          <!-- profile picture upload -->
-          <div class="form-group">
-            <label for="photo">Upload Profile Picture</label>
-            <input type="file" id="photo" name="photo" accept="image/*" />
-          </div>
-          <div class="form-group">
-            <label for="country">Nationality</label>
-            <select name="country" id="country" required>
-              <option value="">Select country</option>
-              <option value="Bangladesh">Bangladesh</option>
-              <option value="India">India</option>
-              <option value="Nepal">Nepal</option>
-              <option value="Pakistan">Pakistan</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <!-- department -->
-          <div class="form-group">
-            <label for="department">Department</label>
-            <select name="department" id="department" required>
-              <option value="">Select Department</option>
-              <option value="CSE">CSE</option>
-              <option value="CIS">CIS</option>
-              <option value="SWE">SWE</option>
-              <option value="EEE">EEE</option>
-              <option value="BBA">BBA</option>
-              <option value="English">English</option>
-            </select>
-          </div>
-          <!-- hobby -->
-          <div class="checkbox-group">
-            <input
-              type="checkbox"
-              id="reading"
-              name="hobby[]"
-              value="Reading" />
-            <label for="reading">Reading</label>
-          </div>
+        </div>
+        <!-- profile picture upload -->
+        <div class="form-group">
+          <label for="photo">Upload Profile Picture</label>
+          <input type="file" id="photo" name="photo" accept="image/*" />
+        </div>
+        <div class="form-group">
+          <label for="country">Nationality</label>
+          <select name="country" id="country" required>
+            <option value="">Select country</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <!-- department -->
+        <div class="form-group">
+          <label for="department">Department</label>
+          <select name="department" id="department" required>
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="CIS">CIS</option>
+            <option value="SWE">SWE</option>
+            <option value="EEE">EEE</option>
+            <option value="BBA">BBA</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+        <!-- hobby -->
+        <div class="checkbox-group">
+          <input type="checkbox" id="reading" name="hobby[]" value="Reading" />
+          <label for="reading">Reading</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="sports-hobby" name="hobby[]" value="Sports" />
+          <label for="sports-hobby">Sports</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="music" name="hobby[]" value="Music" />
+          <label for="music">Music</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="travelling" name="hobby[]" value="Travelling" />
+          <label for="travelling">Travelling</label>
+        </div>
+        <!-- interese -->
+        <div class="form-group">
+          <label>Areas of Interest</label>
 
           <div class="checkbox-group">
-            <input
-              type="checkbox"
-              id="sports-hobby"
-              name="hobby[]"
-              value="Sports" />
-            <label for="sports-hobby">Sports</label>
+            <input type="checkbox" id="technology" name="interest[]" value="Technology" />
+            <label for="technology">Technology</label>
           </div>
 
           <div class="checkbox-group">
-            <input type="checkbox" id="music" name="hobby[]" value="Music" />
-            <label for="music">Music</label>
+            <input type="checkbox" id="business" name="interest[]" value="Business" />
+            <label for="business">Business</label>
           </div>
 
           <div class="checkbox-group">
-            <input
-              type="checkbox"
-              id="travelling"
-              name="hobby[]"
-              value="Travelling" />
-            <label for="travelling">Travelling</label>
-          </div>
-          <!-- interese -->
-          <div class="form-group">
-            <label>Areas of Interest</label>
-
-            <div class="checkbox-group">
-              <input
-                type="checkbox"
-                id="technology"
-                name="interest[]"
-                value="Technology" />
-              <label for="technology">Technology</label>
-            </div>
-
-            <div class="checkbox-group">
-              <input
-                type="checkbox"
-                id="business"
-                name="interest[]"
-                value="Business" />
-              <label for="business">Business</label>
-            </div>
-
-            <div class="checkbox-group">
-              <input
-                type="checkbox"
-                id="sports-interest"
-                name="interest[]"
-                value="Sports" />
-              <label for="sports-interest">Sports</label>
-            </div>
-
-            <div class="checkbox-group">
-              <input type="checkbox" id="arts" name="interest[]" value="Arts" />
-              <label for="arts">Arts</label>
-            </div>
-          </div>
-          <!-- codition -->
-          <div class="form-group terms-group">
-            <input type="checkbox" id="terms" required />
-            <label for="terms"> I agree to the terms & condition </label>
+            <input type="checkbox" id="sports-interest" name="interest[]" value="Sports" />
+            <label for="sports-interest">Sports</label>
           </div>
 
-          <div class="btn-container">
-            <button type="submit" class="submit-btn">sign-up</button>
-            <button type="reset" class="reset-btn">Reset</button>
+          <div class="checkbox-group">
+            <input type="checkbox" id="arts" name="interest[]" value="Arts" />
+            <label for="arts">Arts</label>
           </div>
-        </fieldset>
-      </form>
-    </div>
-  </body>
+        </div>
+        <!-- codition -->
+        <div class="form-group terms-group">
+          <input type="checkbox" id="terms" name="terms" required /> <label for="terms"> I agree to the terms &
+            condition </label>
+        </div>
+
+        <div class="btn-container">
+          <button type="submit" class="submit-btn">sign-up</button>
+          <button type="reset" class="reset-btn">Reset</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
 </html>
